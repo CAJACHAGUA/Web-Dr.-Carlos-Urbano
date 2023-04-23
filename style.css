@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+/*azul y verde*/
+header{
+    display: flex;
+    align-items: center;
+   /* background-color: #146b7e;*/
+}
+.logo{
+    padding: 20px;
+    height: 36px ;
+    width: 110px ;
+}
+nav{
+    padding-left: 55%;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+    
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(59, 57, 57);
+    cursor: pointer;
+    padding-left: 10px;
+}
+.contenedor-title{
+    width: 100%;
+    height: 600px;
+    background-image:url(/img/portada.jpg);
+    background-color: rgba(0, 0, 0, 0.247);
+    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    background-size: cover;
+    position:relative;
+   
+}
+.contenedor-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor-title h1{
+    font-size: 85px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    
+}
+.contenedor-title h2{
+    font-size: 30px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+.info{
+   display: flex;
+   padding:  50px;
+   align-items: center;
+   background-color: #ececeb;
+}
+.logo2{
+    height: 350px;
+    width: 360px;
+}
+.info p{
+    font-size: 18px;
+}
+.title{
+    color: blueviolet;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+.contenedor-instalaciones{
+    padding-bottom: 100px;
+}
+.slider-frame {
+	width: 1000px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+    
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.servicio-cont{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr) ;
+    grid-gap:20px ;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;   
+}
+.servi-1{
+    width: 380px;
+    height: 100%; 
+    background-image: url(/img/nasofibrolaringos.jpg);
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    background-size: 380px 100%;
+    background-repeat: no-repeat;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;
+    
+} .servi-2{ 
+    width: 380px;
+    height: 100%;
+    background-image: url(/img/isto.jpg);
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    background-size: 380px  100%;
+    background-repeat: no-repeat;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;
+    
+} .servi-3 {
+     background-image:url(/img/timpanometria-en-lima.jpg) ;
+     background-color: rgba(0, 0, 0, 0.425);
+     background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+     width: 380px;
+     height: 430px; 
+     background-size: cover;
+     background-size: 500px 100%;
+     background-repeat: no-repeat;
+     position:relative;
+     display: flex;
+     align-items: center;
+     justify-content:end;
+     flex-direction: column;
+
+}.servi-4{
+    background-image:url(/img/videotoscopia-foto.jpg) ;
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    width: 380px;
+    height: 430px; 
+    background-size: cover;
+    background-size: 500px 100%;
+    background-repeat: no-repeat;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;
+} .servi-5 {
+    background-image:url(/img/Captura.jpg) ;
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    width: 380px;
+    height: 430px;
+    background-size: cover;
+    background-size: 380px 100%; 
+    background-repeat: no-repeat;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;
+}.servi-6{
+    background-image:url(img/rehabilitacion-vertigo-fisioterapia-bilbao.jpg) ;
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    width: 380px;
+    height: 430px; 
+    background-size: 480px 100%;
+    background-repeat: no-repeat;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;
+} .servi-7{
+    background-image:url(/img/oido.jpg) ;
+    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 380px;
+    height: 430px;
+    background-size: 480px 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    flex-direction: column;   
+}   
+h3{
+  color: white;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+button{
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(173, 139, 162);
+    padding: 15px;
+    padding-left: 40px ;
+    padding-right: 40px;
+    border: none; 
+    cursor: pointer;
+    font-size: inherit;
+    
+}
+.contenedor-info{
+    background-color: rgb(250, 236, 243);
+    padding: 100px;
+    display: flex;
+    padding-top: 185px;
+    padding-bottom: 185px;
+    
+}
+.contact h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.contact p {
+    font-size: 13pt;
+    padding-bottom: 20px;
+}
+.horario {
+    padding-left: 120px;
+    
+}
+.horario h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.horario p{
+    font-size: 13pt;
+    padding-bottom: 20px;
+
+}
+.Redes{
+    padding-left: 18%;
+}
+.Redes img{
+    height: 30px ;
+    width: 30px ;
+    padding: 20px;
+}
+.copyrigth{
+    background-color:rgb(173, 139, 162) ;
+    padding: 22px;
+    text-align: center;
+    font-size: 18px;
+}
