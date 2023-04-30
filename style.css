@@ -1,292 +1,431 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
+
+* {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto',sans-serif;
 }
-
 
 /*azul y verde*/
-header{
+header {
     display: flex;
     align-items: center;
-   /* background-color: #146b7e;*/
+    background-color: #feffff;
+    padding: 15px;
 }
-.logo{
+
+.logo {
     padding: 20px;
-    height: 36px ;
-    width: 110px ;
+    height: 36px;
+    width: 120px;
+    left: 20px;
 }
-nav{
-    padding-left: 55%;
+
+nav {
+    position: absolute;
+    right: 1px;
     display: flex;
     align-items: center;
 }
-nav img{
-    width: 20px;
+
+nav img {
+    width: 30px;
     height: 20px;
-    padding: 10px;
+
     cursor: pointer;
     padding-left: 10px;
-    
 }
-a{
-    text-decoration: none;
-    padding: 5px;
-    font-size: 18px;
+
+nav a {
+    text-decoration: wavy;
+    padding: 25px;
+    font-size: 16px;
     color: rgb(59, 57, 57);
     cursor: pointer;
     padding-left: 10px;
+    font-family: "Varela Round";
+    font-weight: bold;
 }
-.contenedor-title{
+
+.contenedor-title {
     width: 100%;
     height: 600px;
-    background-image:url(/img/portada.jpg);
+    background-image: url(/img/portada.jpg);
     background-color: rgba(0, 0, 0, 0.247);
-    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    background-blend-mode: overlay;
+    /*convinar fondo oscuro con la imagen*/
     background-size: cover;
-    position:relative;
-   
+    position: relative;
 }
-.contenedor-title{
+
+.contenedor-title {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.contenedor-title h1{
+
+.contenedor-title h1 {
     font-size: 85px;
     color: white;
-    font-family: 'Roboto',sans-serif;
-    
+    font-family: "Roboto", sans-serif;
 }
-.contenedor-title h2{
+
+.contenedor-title h2 {
     font-size: 30px;
     color: white;
-    font-family: 'Roboto',sans-serif;
+    font-family: "Roboto", sans-serif;
 }
-.info{
-   display: flex;
-   padding:  50px;
-   align-items: center;
-   background-color: #ececeb;
+
+.info {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    background-color: #ececeb;
 }
-.logo2{
-    height: 350px;
-    width: 360px;
+
+.log {
+    text-align: center;
 }
-.info p{
+
+.logo2 {
+    height: 330px;
+    width: 280px;
+    box-shadow: 2px 1px 20px #009394;
+    border: 6px solid #006270;
+    cursor: default;
+    transition: transform 0.3s ease-out;
+}
+
+.logo2:hover {
+    box-shadow: 6px 6px 20px #00aae4;
+    transform: scale(1.03);
+}
+
+.descripcion {
+    padding-left: 10%;
+}
+
+.info h2 {
+    font-size: 40px;
+    font-family: "Comfortaa";
+}
+
+.info h4 {
+    font-family: "Comfortaa";
+}
+
+.log a {
+    padding-left: 20%;
+}
+
+.log p {
+    padding-top: 5px;
+    color: #009394;
+    font-weight: bold;
+}
+
+.log hr {
+    position: relative;
+    top: 10px;
+    border: none;
+    height: 6px;
+    background: linear-gradient(to right,
+            rgb(0, 81, 255),
+            rgb(0, 81, 255) 50%,
+            black 50%,
+            black);
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.descripcion hr {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 7px;
+    background: #037cda;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.info p {
     font-size: 18px;
+    font-family: "Comfortaa";
 }
-.title{
+
+.title {
     color: blueviolet;
     padding-bottom: 60px;
     text-align: center;
     font-size: 30px;
+    font-family: "Signika Negative", sans-serif;
 }
-.contenedor-instalaciones{
+
+.contenedor-instalaciones {
     padding-bottom: 100px;
 }
+
 .slider-frame {
-	width: 1000px;
+    width: 800px;
     height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
-    
+    margin: 50px auto 0;
+    overflow: hidden;
 }
 
 .slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	animation: slide 20s infinite alternate ease-in-out;
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
 }
 
 .slider-frame li {
-	width: 100%;
-	list-style: none;
+    width: 100%;
+    list-style: none;
 }
 
 .slider-frame img {
-	width: 100%;
+    width: 100%;
 }
 
 @keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
-.servicio-cont{
+
+.servicio-cont {
     display: grid;
-    grid-template-columns: repeat(3 ,1fr) ;
-    grid-gap:20px ;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 30px;   
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
-.servi-1{
-    width: 380px;
-    height: 100%; 
-    background-image: url(/img/nasofibrolaringos.jpg);
+
+#Servicio {
+    width: 350px;
+    height: 430px;
     background-color: rgba(0, 0, 0, 0.425);
-    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
+    background-blend-mode: overlay;
+    /*convinar fondo oscuro con la imagen*/
     background-size: 380px 100%;
     background-repeat: no-repeat;
-    position:relative;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content:end;
+    justify-content: end;
     flex-direction: column;
-    
-} .servi-2{ 
-    width: 380px;
-    height: 100%;
-    background-image: url(/img/isto.jpg);
-    background-color: rgba(0, 0, 0, 0.425);
-    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
-    background-size: 380px  100%;
-    background-repeat: no-repeat;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content:end;
-    flex-direction: column;
-    
-} .servi-3 {
-     background-image:url(/img/timpanometria-en-lima.jpg) ;
-     background-color: rgba(0, 0, 0, 0.425);
-     background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
-     width: 380px;
-     height: 430px; 
-     background-size: cover;
-     background-size: 500px 100%;
-     background-repeat: no-repeat;
-     position:relative;
-     display: flex;
-     align-items: center;
-     justify-content:end;
-     flex-direction: column;
-
-}.servi-4{
-    background-image:url(/img/videotoscopia-foto.jpg) ;
-    background-color: rgba(0, 0, 0, 0.425);
-    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
-    width: 380px;
-    height: 430px; 
-    background-size: cover;
-    background-size: 500px 100%;
-    background-repeat: no-repeat;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content:end;
-    flex-direction: column;
-} .servi-5 {
-    background-image:url(/img/Captura.jpg) ;
-    background-color: rgba(0, 0, 0, 0.425);
-    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
-    width: 380px;
-    height: 430px;
-    background-size: cover;
-    background-size: 380px 100%; 
-    background-repeat: no-repeat;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content:end;
-    flex-direction: column;
-}.servi-6{
-    background-image:url(img/rehabilitacion-vertigo-fisioterapia-bilbao.jpg) ;
-    background-color: rgba(0, 0, 0, 0.425);
-    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
-    width: 380px;
-    height: 430px; 
-    background-size: 480px 100%;
-    background-repeat: no-repeat;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content:end;
-    flex-direction: column;
-} .servi-7{
-    background-image:url(/img/oido.jpg) ;
-    background-blend-mode: overlay;/*convinar fondo oscuro con la imagen*/
-    background-color: rgba(0, 0, 0, 0.425);
-    width: 380px;
-    height: 430px;
-    background-size: 480px 100%;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content:end;
-    flex-direction: column;   
-}   
-h3{
-  color: white;
-  padding-bottom: 20px;
-  font-size: 22px;
+    transition: transform 0.3s ease-out;
+    border-radius: 15px;
+    box-shadow: 2px 1px 20px #b1afaf;
 }
-button{
+#Servicio:hover {
+    box-shadow: 6px 6px 20px #aaaaaa;
+    transform: scale(1.03);
+}
+.servi-1 {
+    background-image: url(/img/nasofibrolaringos.jpg);
+}
+.servi-2 {
+    background-image: url(/img/isto.jpg);
+}
+.servi-3 {
+    background-image: url(/img/timpanometria-en-lima.jpg);
+}
+.servi-4 {
+    background-image: url(/img/videotoscopia-foto.jpg);
+}
+.servi-5 {
+    background-image: url(/img/Captura.jpg);
+}
+.servi-6 {
+    background-image: url(img/rehabilitacion-vertigo-fisioterapia-bilbao.jpg);
+}
+.servi-7 {
+    background-image: url(/img/oido.jpg);
+}
+
+h3 {
+    color: white;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+}
+
+#Servicio button {
     border-radius: 25px;
     color: white;
     background-color: rgb(173, 139, 162);
     padding: 15px;
-    padding-left: 40px ;
+    padding-left: 40px;
     padding-right: 40px;
-    border: none; 
+    border: none;
     cursor: pointer;
     font-size: inherit;
-    
+    font-weight: bold;
 }
-.contenedor-info{
+
+.contenedor-info {
     background-color: rgb(250, 236, 243);
     padding: 100px;
     display: flex;
     padding-top: 185px;
     padding-bottom: 185px;
-    
 }
-.contact h4{
+
+.contact h4 {
     font-size: 18px;
     padding-bottom: 20px;
 }
+
 .contact p {
     font-size: 13pt;
     padding-bottom: 20px;
 }
+
 .horario {
     padding-left: 120px;
-    
 }
-.horario h4{
+
+.horario h4 {
     font-size: 18px;
     padding-bottom: 20px;
 }
-.horario p{
+
+.horario p {
     font-size: 13pt;
     padding-bottom: 20px;
-
 }
-.Redes{
+
+.Redes {
     padding-left: 18%;
 }
-.Redes img{
-    height: 30px ;
-    width: 30px ;
+
+.Redes img {
+    height: 30px;
+    width: 30px;
     padding: 20px;
 }
-.copyrigth{
-    background-color:rgb(173, 139, 162) ;
+
+.class_opinion {
+    padding: 20px;
+}
+
+.copyrigth {
+    background-color: rgb(173, 139, 162);
     padding: 22px;
     text-align: center;
     font-size: 18px;
 }
+
+/*
+
+*/
+.swiper{
+    align-items: center;
+  }
+  
+  .swiper-wrapper{
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card{
+    width: 20em;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 1em #51a2e9;
+    padding: 2em 1em;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    margin: 0 2em;
+  }
+  
+ 
+  
+  .card__image{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid #037cda;
+    padding: 3px;
+    margin-bottom: 2em;
+  }
+  
+  .card__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card__title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+  }
+  
+  .card__name{
+    color: #009394;
+  }
+  
+  .card__text{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+  }
+  
+  .card__btn{
+    background-color: var(--color);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+  }
+  
