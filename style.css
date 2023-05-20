@@ -1,431 +1,349 @@
-@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+/* Logo Whatsap*/
+.btn-whatsapp {
+	position: fixed;
+	z-index: 999;
+	bottom: 20px;
+	right: 20px;
 }
 
+.btn-whatsapp:before,
+.btn-whatsapp:after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #00e676;
+	opacity: 0;
+	animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp:before {
+	animation-delay: 1s;
+}
+
+.btn-whatsapp:after {
+	animation-delay: 1.3s;
+}
+
+.btn-whatsapp img {
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes onda {
+	0% {
+		transform: scale(1);
+	}
+
+	15%{
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
+}
 /*azul y verde*/
+body {
+  background-color: #fefefe;
+}
+
 header {
-    display: flex;
-    align-items: center;
-    background-color: #feffff;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
 }
 
 .logo {
-    padding: 20px;
-    height: 36px;
-    width: 120px;
-    left: 20px;
+  padding: 20px;
+  height: 36px;
+  width: 120px;
+  left: 20px;
 }
 
 nav {
-    position: absolute;
-    right: 1px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  right: 1px;
+  display: flex;
+  align-items: center;
 }
 
 nav img {
-    width: 30px;
-    height: 20px;
+  width: 30px;
+  height: 20px;
 
-    cursor: pointer;
-    padding-left: 10px;
+  cursor: pointer;
+  padding-left: 10px;
 }
 
 nav a {
-    text-decoration: wavy;
-    padding: 25px;
-    font-size: 16px;
-    color: rgb(59, 57, 57);
-    cursor: pointer;
-    padding-left: 10px;
-    font-family: "Varela Round";
-    font-weight: bold;
+  text-decoration: wavy;
+  padding: 25px;
+  font-size: 16px;
+  color: rgb(59, 57, 57);
+  cursor: pointer;
+  padding-left: 10px;
+  font-family: "Varela Round";
+  font-weight: bold;
 }
 
-.contenedor-title {
-    width: 100%;
-    height: 600px;
-    background-image: url(/img/portada.jpg);
-    background-color: rgba(0, 0, 0, 0.247);
-    background-blend-mode: overlay;
-    /*convinar fondo oscuro con la imagen*/
-    background-size: cover;
-    position: relative;
+.contenedor-portada {
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/portada.jpg);
+  background-color: rgba(0, 0, 0, 0.514);
+  background-blend-mode: overlay;
+  /*convinar fondo oscuro con la imagen*/
+  background-size: cover;
+  position: relative;
 }
-
-.contenedor-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#cita {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 24px;
+  border-radius: 15px 15px 15px 15px;
+  padding: 15px 40px;
+  font-weight: 100px;
 }
-
-.contenedor-title h1 {
-    font-size: 85px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-}
-
-.contenedor-title h2 {
-    font-size: 30px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-}
-
-.info {
-    display: flex;
-    padding: 100px;
-    align-items: center;
-    background-color: #ececeb;
-}
-
-.log {
-    text-align: center;
+.contenedor-info {
+  display: flex;
+  padding: 80px;
+  align-items: center;
+  background-color: #ececeb;
 }
 
 .logo2 {
-    height: 330px;
-    width: 280px;
-    box-shadow: 2px 1px 20px #009394;
-    border: 6px solid #006270;
-    cursor: default;
-    transition: transform 0.3s ease-out;
+  height: 330px;
+  width: 280px;
+  box-shadow: 2px 1px 20px #009394;
+  border: 6px solid #006270;
+  cursor: default;
+  transition: transform 0.3s ease-out;
 }
 
 .logo2:hover {
-    box-shadow: 6px 6px 20px #00aae4;
-    transform: scale(1.03);
+  box-shadow: 6px 6px 20px #00aae4;
+  transform: scale(1.03);
 }
 
-.descripcion {
-    padding-left: 10%;
-}
-
-.info h2 {
-    font-size: 40px;
-    font-family: "Comfortaa";
-}
-
-.info h4 {
-    font-family: "Comfortaa";
-}
-
-.log a {
-    padding-left: 20%;
+.contenedor-info h2 {
+  font-size: 40px;
+  font-family: "Comfortaa";
+  font-weight: 100px;
 }
 
 .log p {
-    padding-top: 5px;
-    color: #009394;
-    font-weight: bold;
+  padding-top: 5px;
+  color: #009394;
+  font-weight: bold;
 }
 
 .log hr {
-    position: relative;
-    top: 10px;
-    border: none;
-    height: 6px;
-    background: linear-gradient(to right,
-            rgb(0, 81, 255),
-            rgb(0, 81, 255) 50%,
-            black 50%,
-            black);
-    margin-bottom: 30px;
-    border-radius: 30px;
+  position: relative;
+  top: 10px;
+  border: none;
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    rgb(0, 81, 255),
+    rgb(0, 81, 255) 50%,
+    black 50%,
+    black
+  );
+  margin-bottom: 30px;
+  border-radius: 30px;
 }
 
 .descripcion hr {
-    position: relative;
-    top: 20px;
-    border: none;
-    height: 7px;
-    background: #037cda;
-    margin-bottom: 30px;
-    border-radius: 30px;
+  position: relative;
+  top: 20px;
+  border: none;
+  height: 7px;
+  background: #037cda;
+  margin-bottom: 30px;
+  border-radius: 30px;
 }
 
-.info p {
-    font-size: 18px;
-    font-family: "Comfortaa";
+.contenedor-info p {
+  font-size: 18px;
+  font-family: "Comfortaa";
 }
-
-.title {
-    color: blueviolet;
-    padding-bottom: 60px;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Signika Negative", sans-serif;
+.cont-servicio {
+  padding: 40px 110px;
 }
-
-.contenedor-instalaciones {
-    padding-bottom: 100px;
-}
-
-.slider-frame {
-    width: 800px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-}
-
-.slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-    width: 100%;
-    list-style: none;
-}
-
-.slider-frame img {
-    width: 100%;
-}
-
-@keyframes slide {
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -300%;
-    }
-}
-
 .servicio-cont {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
-
 #Servicio {
-    width: 350px;
-    height: 430px;
-    background-color: rgba(0, 0, 0, 0.425);
-    background-blend-mode: overlay;
-    /*convinar fondo oscuro con la imagen*/
-    background-size: 380px 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: column;
-    transition: transform 0.3s ease-out;
-    border-radius: 15px;
-    box-shadow: 2px 1px 20px #b1afaf;
+  width: 350px;
+  height: 430px;
+  background-color: rgba(0, 0, 0, 0.103);
+  background-blend-mode: overlay;
+  /*convinar fondo oscuro con la imagen*/
+  background-size: 380px 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  transition: transform 0.3s ease-out;
+  border-radius: 15px;
+  box-shadow: 2px 1px 20px #17cfa1;
 }
 #Servicio:hover {
-    box-shadow: 6px 6px 20px #aaaaaa;
-    transform: scale(1.03);
+  box-shadow: 6px 6px 20px #34c9a3;
+  transform: scale(1.03);
 }
-.servi-1 {
-    background-image: url(/img/nasofibrolaringos.jpg);
-}
-.servi-2 {
-    background-image: url(/img/isto.jpg);
-}
-.servi-3 {
-    background-image: url(/img/timpanometria-en-lima.jpg);
-}
-.servi-4 {
-    background-image: url(/img/videotoscopia-foto.jpg);
-}
-.servi-5 {
-    background-image: url(/img/Captura.jpg);
-}
-.servi-6 {
-    background-image: url(img/rehabilitacion-vertigo-fisioterapia-bilbao.jpg);
-}
-.servi-7 {
-    background-image: url(/img/oido.jpg);
-}
-
-h3 {
-    color: white;
-    padding-bottom: 20px;
-    font-size: 22px;
-    font-family: "Roboto", sans-serif;
+.servicio-cont h3 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 200px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #Servicio button {
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(173, 139, 162);
-    padding: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    font-weight: bold;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(173, 139, 162);
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
 }
 
-.contenedor-info {
-    background-color: rgb(250, 236, 243);
-    padding: 100px;
-    display: flex;
-    padding-top: 185px;
-    padding-bottom: 185px;
+.inscripcion {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+input {
+  margin-bottom: 10px;
+}
+#text {
+  height: 50px;
+  width: 100%;
+}
+.mensaje {
+  padding-bottom: 100px;
+  width: 100%;
 }
 
-.contact h4 {
-    font-size: 18px;
-    padding-bottom: 20px;
+
+.card {
+  width: 50%;
+  height: 70%;
+  background-color: #fefefe;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em #999999;
+  padding: 0.5em 1em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 2em;
 }
 
-.contact p {
-    font-size: 13pt;
-    padding-bottom: 20px;
+.card-img {
+  width: 80px;
+  height:80px;
+  border-radius: 50px;
+  position: absolute;
+  top:-55px
+}
+.card-title{
+  display: flex;
+  align-items: center;
+  font-family: 'Reem Kufi Fun', sans-serif;
+}
+.card-title h1{
+     font-size: 100px;
+     padding-right: 20px;
+     color: #123f6f;
 }
 
-.horario {
-    padding-left: 120px;
+.card-text {
+  color: #14344b;
+  font-size: 16px;
+  margin: 1em 0;
+  font-family: sans-serif ;
 }
-
-.horario h4 {
-    font-size: 18px;
-    padding-bottom: 20px;
-}
-
-.horario p {
-    font-size: 13pt;
-    padding-bottom: 20px;
-}
-
-.Redes {
-    padding-left: 18%;
-}
-
-.Redes img {
-    height: 30px;
-    width: 30px;
-    padding: 20px;
-}
-
-.class_opinion {
-    padding: 20px;
-}
-
-.copyrigth {
-    background-color: rgb(173, 139, 162);
-    padding: 22px;
-    text-align: center;
-    font-size: 18px;
-}
-
-/*
-
-*/
-.swiper{
-    align-items: center;
-  }
-  
-  .swiper-wrapper{
-    width: 100%;
-    height: 35em;
-    display: flex;
-    align-items: center;
-  }
-  
-  .card{
-    width: 20em;
-    height: 70%;
-    background-color: #fff;
-    border-radius: 2em;
-    box-shadow: 0 0 1em #51a2e9;
-    padding: 2em 1em;
-  
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  
-    margin: 0 2em;
-  }
-  
+/**/
+.card_body{ 
+  padding-top: 20px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
  
   
-  .card__image{
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    border: 5px solid #037cda;
-    padding: 3px;
-    margin-bottom: 2em;
-  }
   
-  .card__image img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .card__content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .card__title{
-    font-size: 1.5rem;
-    font-weight: 500;
-    position: relative;
-    top: .2em;
-  }
-  
-  .card__name{
-    color: #009394;
-  }
-  
-  .card__text{
-    text-align: center;
-    font-size: 1.1rem;
-    margin: 1em 0;
-  }
-  
-  .card__btn{
-    background-color: var(--color);
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: none;
-    padding: .5em;
-    border-radius: .5em;
-    margin-top: .5em;
-    cursor: pointer;
-  }
-  
+}
+.card_title{
+  font-family: 'Reem Kufi Fun', sans-serif;
+  font-size: 18px;
+}
+.fecha{
+  font-size: 14px;
+  color: #999999;  
+
+}
+.card_text{
+  position: relative;
+  top: -20px;
+  overflow: hidden;
+
+}
+.estrellas{
+  position: relative;
+  top:-15px;
+  color: rgb(246, 187, 6);
+  font-size: 25px;
+}
+
+
+footer {
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+  display: flex;
+  text-align: center;
+  border-bottom: 3px solid #ffca2c;
+  padding-bottom: 5px;
+}
+
+.content-foo p {
+  padding-left: 10px;
+  color: #ccc;
+  font-size: 18px;
+}
+

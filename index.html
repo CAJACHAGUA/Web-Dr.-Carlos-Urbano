@@ -1,210 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
   
-    <link rel="stylesheet" href="style.css">
-    
+  <title>Dr.Web-Carlos Urbano</title>
 </head>
 <body>
-    <header>
-        <div class="logo-inf">
-            <img src="../img/cropped.png" alt="logo-compañia" class="logo" >
-        </div>
-        <nav>
-            <a href="#">SERVICIO</a>
-            <a href="#">CONTACTOS</a>
-            <a href="#">NOSOTROS</a>
-            <a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="facebook" ></a>
-            <a href="https://www.instagram.com/"><img src="/img/instagram.png" alt="instagram"></a>
-            <a href="https://web.whatsapp.com/%F0%9F%8C%90/es"><img src="/img/telefono.png" alt="whasa"></a>
-           
-        </nav>
-    </header>
-    
-    <section class="contenedor-title">
-        <h1>Doctor Carlos</h1>
-        <h2>Centro otorrinolaringológico</h2>
-
-    </section>
- 
-    <section class="info"> 
-    <div class="log">
-         <img src="/img/doctor.jpg" alt="" class="logo2">
-         <p>C M P 64041<a></a> N E : 34005</P>
-         <hr>
+  <a href="#" class="btn-whatsapp"><img src="/img/icon-whatsapp.svg" alt="Contactar por whatsapp"></a>
+  <header>
+    <div class="logo-inf">
+      <img src="/img/icon-whatsapp.svg" alt="logo-compañia" class="logo" />
     </div>
-    <div class="descripcion">
-        <h2>Doctor Carlos Urbano</h2>
-        <br>
-        <h4>Otorrinolaringólogo especializado en trastornos con el oído, la nariz y la garganta</h4>
-         <hr >
-         <p>Bienvenidos a la página web del Dr.Carlos Urbano, donde ofrecemos atención médica personalizada y de alta calidad. Con una formación académica rigurosa y una amplia experiencia clínica, el Dr.Carlos Urbano es un líder en su especialidad y trabaja arduamente para mantenerse actualizado/a sobre las últimas técnicas y avances médicos. ¡Póngase en contacto con nosotros hoy mismo para programar una consulta y comenzar su viaje hacia una mejor salud y bienestar!</p>
+    <nav>
+      <a href="#">SERVICIO</a>
+      <a href="#">CONTACTOS</a>
+      <a href="#">NOSOTROS</a>
+      <a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="facebook" /></a>
+      <a href="https://www.instagram.com/"><img src="/img/instagram.png" alt="instagram" /></a>
+      <a href="https://web.whatsapp.com/%F0%9F%8C%90/es"><img src="/img/telefono.png" alt="whasa" /></a>
+    </nav>
+  </header>
+
+  <section class="contenedor-portada" style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      ">
+    <div class="portada" style="
+          text-align: center;
+          color: white;
+          font-family: 'Noto Sans', sans-serif;
+        ">
+      <h3 style="color: rgb(170, 167, 167)">Centro otorrinolaringológico</h3>
+      <h1 style="font-size: 90px">Doctor Carlos Urbano</h1>
+      <button type="button" class="btn btn-warning" id="cita">
+        Pedir cita
+      </button>
     </div>
-    </body>
+  </section>
 
-    </section>
-    <section class="contenedor-instalaciones">
-        <div class="slider-frame">
-            <div class="title"><h1>CONOCE NUESTRAS INSTALACIONES</h1></div>
-            <ul>
-                <li><img src="/img/CONSULTORIO-1.jpg" alt=""></li>
-                <li><img src="/img/consultorio 2.jpg" alt=""></li>
-                <li><img src="img/CONSULTORIO-3.jpg" alt=""></li>
-                <li><img src="/img/CONSULTORIO-4.jpg" alt=""></li>
-            </ul>
-        </div>
-    </section>
-    <section class="contenedor-nuestros servicios" style="background-color:#f4f7fb; padding: 100px;">
-        <div class="title"><h1>NUESTROS SERVICIOS</h1></div>
-        <div class="servicio-cont">
-            <div class="servi-1" id="Servicio">
-                <h3>NASOFIBROLARINGOSOCOPIA</h3>
-                <button>CONOCE MÁS</button><br>
-            </div>
-            <div class="servi-2" id="Servicio">
-                <h3 class="h3">AUDIOMETRIA</h3>
-                <button>CONOCE MÁS</button><br>
-            </div>
-            <div class="servi-3" id="Servicio">
-                <h3>TIMPANOMETRIA</h3>
-                <button>CONOCE MÁS</button><br>
-            </div>
-            <div class="servi-4" id="Servicio">
-                <h3>VIDEOTOSCOPIA</h3>
-                <button>CONOCE MÁS</button><br>
-            </div>
-            <div class="servi-5" id="Servicio">
-                <h3>CIRUGIAS</h3>
-                <button>CONOCE MÁS</button><br>
-                
-            </div>
-            <div class="servi-6" id="Servicio">
-                <h3>PRUEBAS VESTICULARES</h3>
-                <button>CONOCE MÁS</button> <br> 
-            </div>
-            <div class="servi-7" id="Servicio">       
-                <h3>LAVADO DE OIDOS</h3>
-                <button>CONOCE MÁS</button><br>
-            </div>
-        </div>
-    </section>
-    <section class="swiper mySwiper" style="padding: 70px; background-color:#3d6990;"> 
-        <h1 style="text-align:center; color:#f4f7fb; font-size:45px;font-family: Signika Negative", sans-serif;>COMENTARIO DESTACADOS</h1>
-        <div class="swiper-wrapper">
-          <div class="card swiper-slide">
-            <div class="card__image">
-              <img src="/img/perfil.jpg" alt="card image">
-            </div>
-    
-            <div class="card__content">
-              <span class="card__title">Web Designer</span>
-              <span class="card__name">Vanessa Martinez</span>
-              <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-              <button class="card__btn">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="card__image">
-              <img src="/img/perfil.jpg" alt="card image">
-            </div>
-    
-            <div class="card__content">
-              <span class="card__title">Ui Designer</span>
-              <span class="card__name">Sarah Bowen</span>
-              <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-              <button class="card__btn">View More</button>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="card__image">
-              <img src="/img/perfil.jpg" alt="card image">
-            </div>
-    
-            <div class="card__content">
-              <span class="card__title">Ui Designer</span>
-              <span class="card__name">Sarah Bowen</span>
-              <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-              <button class="card__btn">View More</button>
-            </div>
-          </div>
-    
-          <div class="card swiper-slide">
-            <div class="card__image">
-              <img src="/img/perfil.jpg" alt="card image">
-            </div>
-    
-            <div class="card__content">
-              <span class="card__title">Web Developer</span>
-              <span class="card__name">David Murphy</span>
-              <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-              <button class="card__btn">View More</button>
-            </div>
-          </div>
-    
-          <div class="card swiper-slide">
-            <div class="card__image">
-              <img src="/img/perfil.jpg" alt="card image">
-            </div>
-    
-            <div class="card__content">
-              <span class="card__title">Mobile Designer</span>
-              <span class="card__name">Kelsey West</span>
-              <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-              <button class="card__btn">View More</button>
-            </div>
-          </div>   
-        </div>  
-    </section>
-    <section class="contenedor-info">
-        <div class="contact">
-            <h4>CONTACTOS</h4>
-            <p>+51 993979 357</p>
-            <p>Av.Andres aramburú 343, San Isidro, Lima Perú</p>
-        </div>
-        <div class="horario">
-            <h4>HORARIO DE ATENCION</h4>
-            <p>Lunes a Viernes: 09:00-18:00</p>
-            <p>Sábados:09:00-19:00</p>
-        </div>
-        <div class="Redes">
-            <img src="/img/facebook.png" alt="">
-            <img src="/img/instagram.png" alt="">
-            <img src="/img/telefono.png" alt="">
-            
-        </div>
-    </section> 
-    <footer>
-        <div class="copyrigth">
-            <p>Copyright © 2023 Otorrino Clinical</p>
-        </div>
-    </footer>
-    <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <section class="contenedor-info">
+    <div class="log" style="text-align: center">
+      <img src="/img/doctor.jpg" alt="" class="logo2" />
+      <p>C M P 64041<a style="padding-left: 20%"></a> N E : 34005</p>
+      <hr />
+    </div>
+    <div class="descripcion" style="padding-left: 10%">
+      <h2>Doctor Carlos Urbano</h2>
+      <br />
+      <h4 style="font-family: Comfortaa">
+        Otorrinolaringólogo especializado en trastornos con el oído, la nariz
+        y la garganta
+      </h4>
+      <hr />
+      <p>
+        Bienvenidos a la página web del Dr.Carlos Urbano, donde ofrecemos
+        atención médica personalizada y de alta calidad. Con una formación
+        académica rigurosa y una amplia experiencia clínica, el Dr.Carlos
+        Urbano es un líder en su especialidad y trabaja arduamente para
+        mantenerse actualizado/a sobre las últimas técnicas y avances médicos.
+        ¡Póngase en contacto con nosotros hoy mismo para programar una
+        consulta y comenzar su viaje hacia una mejor salud y bienestar!
+      </p>
+    </div>
+  </section>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides:false,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 300,
-        modifier:1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
-  </script>
+  <section class="contenedor-servicio" style="background: #13af88">
+    <div style="height: 150px; overflow: hidden">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: #ececeb"></path>
+      </svg>
+    </div>
+    <div class="title" style="text-align: center; color: #ffc107">
+      <h1 style="
+            font-weight: 100px;
+            font-size: 60px;
+            font-family: 'Noto Sans TC', sans-serif;
+          ">
+        Nuestros Servicios
+      </h1>
+    </div>
+    <div class="cont-servicio">
+      <div class="servicio-cont">
+        <div class="servi-1" id="Servicio" style="background-image: url(/img/nasofibrolaringos.jpg)">
+          <h3>NASOFIBROLARINGOSOCOPIA</h3>
+          <button>CONOCE MÁS</button><br />
+        </div>
+        <div class="servi-2" id="Servicio" style="background-image: url(/img/isto.jpg)">
+          <h3>AUDIOMETRIA</h3>
+          <button>CONOCE MÁS</button><br />
+        </div>
+        <div class="servi-3" id="Servicio" style="background-image: url(/img/timpanometria-en-lima.jpg)">
+          <h3>TIMPANOMETRIA</h3>
+          <button>CONOCE MÁS</button><br />
+        </div>
+        <div class="servi-4" id="Servicio" style="background-image: url(/img/videotoscopia-foto.jpg)">
+          <h3>VIDEOTOSCOPIA</h3>
+          <button>CONOCE MÁS</button><br />
+        </div>
+        <div class="servi-5" id="Servicio" style="background-image: url(/img/Captura.jpg)">
+          <h3>CIRUGIAS</h3>
+          <button>CONOCE MÁS</button><br />
+        </div>
+        <div class="servi-6" id="Servicio" style="
+              background-image: url(img/rehabilitacion-vertigo-fisioterapia-bilbao.jpg);
+            ">
+          <h3>PRUEBAS VESTICULARES</h3>
+          <button>CONOCE MÁS</button> <br />
+        </div>
+        <div class="servi-7" id="Servicio" style="background-image: url(/img/oido.jpg)">
+          <h3>LAVADO DE OIDOS</h3>
+          <button>CONOCE MÁS</button><br />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor">
+    <div style="height: 150px; overflow: hidden">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: #13af88"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="contenedor-comentarios" style="background: linear-gradient(to top, #cdc6c0 70%, #fefefe 50%)">
+    <div class="title" style="
+          text-align: center;
+          padding-bottom: 50px;
+          font-family: 'Reem Kufi Fun', sans-serif;
+        ">
+      <h3 style="font-size: 15px; color: #ccc">
+        VANGUARDIA TECNOLÓGICA PARA TU BIENESTAR
+      </h3>
+      <h1 style="font-size: 60px">¿Por qué eligirnos?</h1>
+    </div>
+    <div class="cont-motivo" style="display: flex; justify-content: center; margin: 50px">
+      <div class="card" style="width: 23rem">
+        <div class="card-body">
+          <div class="card-title">
+            <h1>1</h1>
+            <h3>Experiencia y conocimiento</h3>
+          </div>
+          <p class="card-text">
+            Medico con un amplio conocimiento y experiencia en el diagnóstico
+            y tratamiento de trastornos del oído, nariz y garganta.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 22rem ;">
+        <div class="card-body">
+          <div class="card-title">
+            <h1>2</h1>
+            <h3>Enfoque centrado en el paciente</h3>
+          </div>
+          <p class="card-text">
+            Me preocupo por el bienestar general de mis pacientes y tomo en
+            consideración todos los aspectos de su salud al brindarles
+            atención.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 21rem">
+        <div class="card-body">
+          <div class="card-title">
+            <h1>3</h1>
+            <h3>Comunicación efectiva</h3>
+          </div>
+          <p class="card-text">
+            Comunicación abierta y transparente con mis pacientes, explicaré
+            detalladamente cualquier diagnóstico, opciones de tratamiento.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cont-comentarios" style="background-color: #cdc6c0; padding: 60px 0px">
+      <div class="title1" style="text-align: center; font-family: Quicksand, sans-serif; padding-bottom: 80px;">
+        <h1 style="font-size: 50px;">Lo que opinan nuestros pacientes</h1>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="padding: 60px 90px 100px; padding-right: 10%">
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-md-3 g-6">
+              <div class="col">
+                <div class="card" style="width: 99%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card title</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card title</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This card has supporting text below as a natural lead-in
+                      to additional content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card title</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This card has
+                      even longer content than the first to show that equal
+                      height action.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card kdjdjdijd</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card title</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This card has supporting text below as a natural lead-in
+                      to additional content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card title</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This card has
+                      even longer content than the first to show that equal
+                      height action.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card title</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Card title</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This card has supporting text below as a natural lead-in
+                      to additional content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 100%; height: 100%">
+                  <img src="/img/perfil.jpg" class="card-img" alt="..." />
+                  <div class="card_body" id="card">
+                    <h5 class="card_title">Ckjj</h5>
+                    <p class="fecha">20 Junio del 2023</p>
+                    <p class="estrellas">&#9733 &#9733 &#9733 &#9733 &#9733</p>
+                    <p class="card_text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This card has
+                      even longer content than the first to show that equal
+                      height
+                      action.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev" style="width: 100px">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next" style="width: 100px">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor-ubicacion" style="
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px;
+        font-family: 'Montserrat', sans-serif;
+      ">
+    <div class="mapa" style="margin-top: 50px">
+      <h3 style="text-align: center">
+        Si necesitas reservar una cita, bríndanos tus datos y nos pondremos en
+        contacto a la brevedad con usted.
+      </h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62434.734917826005!2d-77.11657609687973!3d-12.031750585274896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cebb5a15196f%3A0x4740359b1aa3a524!2sJr.%20Huaraz%2C%20San%20Mart%C3%ADn%20de%20Porres%2015106!5e0!3m2!1ses!2spe!4v1684208236948!5m2!1ses!2spe"
+        width="600" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="inscripcion">
+      <form action="" class="reservar" style="margin: 20px">
+        <input type="text" name="nombre" id="text" placeholder="Nombre y Apellido" /><br />
+        <input type="number" name="telefono" id="text" placeholder="Teléfono" /><br />
+        <input type="email" name="correo" id="text" placeholder="Correo" /><br />
+        <input type="" name="selecciones" id="text" placeholder="Selecciones" /><br />
+        <p>¿Por que servicio nos contactas?</p>
+        <textarea type="text" class="mensaje" name="mensaje" id="" placeholder="Mensaje"></textarea><br />
+        <button type="submit" class="btn btn-outline-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="cont-horario" style="
+          display: flex;
+          justify-content: space-between;
+          padding: 0px 150px 30px;
+        ">
+      <div class="horario" style="color: white">
+        <h4>HORARIO DE ATENCION</h4>
+        <p>Lunes a Viernes: 09:00-18:00</p>
+        <p>Sábados: 09:00-19:00</p>
+      </div>
+
+      <div class="Redes">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook"
+          viewBox="0 0 16 16" style="color: white">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram"
+          viewBox="0 0 16 16" style="color: white">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp"
+          viewBox="0 0 16 16" style="color: white">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+      </div>
+    </div>
+    <div class="contenedor-footer">
+      <div class="content-foo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-fill"
+          viewBox="0 0 16 16" style="color: white">
+          <path fill-rule="evenodd"
+            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+        </svg>
+        <p>+51 993979 357</p>
+      </div>
+      <div class="content-foo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-fill"
+          viewBox="0 0 16 16" style="color: white">
+          <path
+            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+        </svg>
+        <p>carlosurbanov123@gmail.com</p>
+      </div>
+      <div class="content-foo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill"
+          viewBox="0 0 16 16" style="color: white">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+        </svg>
+        <p>Av.Andres aramburú 343, San Isidro</p>
+      </div>
+    </div>
+    <h2 class="titulo-final" style="
+          text-align: center;
+          padding-top: 20px;
+          color: #ccc;
+          font-size: large;
+        ">
+      Copyrigth &copy; Dr.Carlos Urbano 2023.Todos los derechos reservados
+    </h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
-    
